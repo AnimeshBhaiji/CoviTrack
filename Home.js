@@ -19,8 +19,8 @@ const Home = () => {
     const fetchTopHeadlines = async () => {
       try {
         const response = await axios.get(
-          'https://newsapi.org/v2/top-headlines?q=disease&apiKey=c26d96b6da57456e9f895855e4f10ff7'
-        );
+          ''
+        ); // Insert your api key here: https://newsapi.org/v2/top-headlines?q=disease&apiKey=""
         // Check if there are articles returned
         if (response.data.articles && response.data.articles.length > 0) {
           // Extract top 2 headlines from the response and store them in separate variables
